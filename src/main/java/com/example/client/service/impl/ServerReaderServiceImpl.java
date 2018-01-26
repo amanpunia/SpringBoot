@@ -23,7 +23,6 @@ import org.springframework.stereotype.Service;
 
 import com.example.client.service.ServerReaderService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.netflix.hystrix.exception.HystrixBadRequestException;
 
 @Service
 public class ServerReaderServiceImpl implements ServerReaderService {
