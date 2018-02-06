@@ -9,8 +9,8 @@ public class TestRegex {
 
 	private Pattern pattern;
 	private Matcher matcher;
-
-	private static final String IMAGE_FILENAME_PATTERN = "[a-zA-Z0-9_. `~!@#$%^&()+=,.;'\\-\\[\\]\\{\\}]+(\\.(?i)(jpg|png|jpeg|gif|bmp)$)";
+	//.{1,95}(\\.(?i)(jpg|png|jpeg|gif|bmp)$)
+	private static final String IMAGE_FILENAME_PATTERN = "[a-zA-Z0-9_. `~!@#$%^&()+=,.;'\\-\\[\\]\\{\\}]{1,95}(\\.(?i)(jpg|png|jpeg|gif|bmp)$)";
 
 	public TestRegex() {
 		pattern = Pattern.compile(IMAGE_FILENAME_PATTERN);
